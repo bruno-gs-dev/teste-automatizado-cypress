@@ -25,7 +25,6 @@ describe('Login no GitHub', () => {
         })
 
         // Verifica elemento do perfil , define um timeout e verifica se existe
-        cy.get('summary[aria-label="View profile and more"], input[name="otp"]', { timeout: 10000 })
-            .should('exist')
+        cy.get('summary[aria-label="View profile and more"], input[name="otp"]', { timeout: 10000 }).should('exist')
     })
 })
